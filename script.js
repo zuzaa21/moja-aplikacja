@@ -1,7 +1,7 @@
 const messages = document.getElementById("messages");
 const input = document.getElementById("input");
 
-const API_KEY = "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"
+const API_KEY = "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"
 
 let chatHistory = [
   {
