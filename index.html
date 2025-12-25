@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>Moja aplikacja</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .box {
-      background: #1e1e1e;
-      padding: 30px;
-      border-radius: 10px;
-      text-align: center;
-      width: 300px;
-    }
-    button {
-      margin-top: 15px;
-      padding: 10px;
-      width: 100%;
-      background: #4caf50;
-      border: none;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>My AI Chat</title>
+<style>
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+}
+#chat {
+  max-width: 600px;
+  margin: auto;
+  padding-top: 50px;
+}
+.msg {
+  margin: 10px 0;
+}
+.user { color: #4ade80; }
+.bot { color: #60a5fa; }
+input, button {
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+</style>
 </head>
 <body>
-  <div class="box">
-    <h1>🎉 Działa!</h1>
-    <p>To jest moja pierwsza darmowa aplikacja.</p>
-    <button onclick="alert('Brawo! 🎉')">Kliknij mnie</button>
-  </div>
+
+<div id="chat">
+  <h2>🤖 My AI</h2>
+  <div id="messages"></div>
+  <input id="input" placeholder="Napisz wiadomość..." />
+  <button onclick="send()">Wyślij</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
