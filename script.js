@@ -1,7 +1,7 @@
 const messages = document.getElementById("messages");
 const input = document.getElementById("input");
 
-const API_KEY = "WKLEJ_TUTAJ_SWÓJ_KLUCZ_OPENROUTER";
+const API_KEY = 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
 
 let chatHistory = [
   {
